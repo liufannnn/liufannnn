@@ -13,7 +13,3 @@
         return PreviewController(coder: coder, book: book)
    }
    ```
-
-## UIView
-
-1. [圆角](https://github.com/MrGCY/AnyCornerRadius)
