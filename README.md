@@ -17,3 +17,7 @@
 ## 💬 悟 · 道
 
 1. 不能坚守自己的抉择，最后只能是一步错步步错，悔不当初又无可奈何。
+
+## ♻️ 拾遗
+
+1. [最适合程序员的笔记软件](https://www.ruanyifeng.com/blog/2021/08/best-note-taking-software-for-programmers.html)
