@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D487A5D5FD4A8CD333EABCB /* libPods-LiuFan-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40A4A0308A70DC08A9161E9 /* libPods-LiuFan-iOS.a */; };
 		C286981929C8039B0085654D /* LiuFan.docc in Sources */ = {isa = PBXBuildFile; fileRef = C286981829C8039B0085654D /* LiuFan.docc */; };
 		C286981F29C8039D0085654D /* LiuFan_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C286981429C8039B0085654D /* LiuFan_iOS.framework */; };
 		C286982429C8039D0085654D /* LiuFanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286982329C8039D0085654D /* LiuFanTests.swift */; };
@@ -24,14 +25,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C284A97A29C80EEE008D5745 /* iOS开发笔记 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "iOS开发笔记"; sourceTree = "<group>"; };
-		C284A97B29C80F1B008D5745 /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; };
-		C284A97C29C81120008D5745 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1AC779BD96A5D25F194A2DAF /* Pods-LiuFan-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiuFan-iOS.release.xcconfig"; path = "Target Support Files/Pods-LiuFan-iOS/Pods-LiuFan-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C284A97A29C80EEE008D5745 /* iOS开发笔记 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "iOS开发笔记"; path = "../iOS开发笔记"; sourceTree = "<group>"; };
+		C284A97B29C80F1B008D5745 /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Examples.playground; path = ../Examples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C284A97C29C81120008D5745 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C286981429C8039B0085654D /* LiuFan_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiuFan_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C286981729C8039B0085654D /* LiuFan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiuFan.h; sourceTree = "<group>"; };
 		C286981829C8039B0085654D /* LiuFan.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LiuFan.docc; sourceTree = "<group>"; };
 		C286981E29C8039D0085654D /* LiuFanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiuFanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C286982329C8039D0085654D /* LiuFanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiuFanTests.swift; sourceTree = "<group>"; };
+		C40A4A0308A70DC08A9161E9 /* libPods-LiuFan-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiuFan-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C953A79BCB6A3468B3E934FB /* Pods-LiuFan-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiuFan-iOS.debug.xcconfig"; path = "Target Support Files/Pods-LiuFan-iOS/Pods-LiuFan-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D487A5D5FD4A8CD333EABCB /* libPods-LiuFan-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,15 +58,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2680793EBAA6D8628E0D1C94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C40A4A0308A70DC08A9161E9 /* libPods-LiuFan-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		612AE7E17914C25971C0CC00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C953A79BCB6A3468B3E934FB /* Pods-LiuFan-iOS.debug.xcconfig */,
+				1AC779BD96A5D25F194A2DAF /* Pods-LiuFan-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		C286980A29C8039B0085654D = {
 			isa = PBXGroup;
 			children = (
 				C284A97C29C81120008D5745 /* README.md */,
 				C284A97A29C80EEE008D5745 /* iOS开发笔记 */,
 				C284A97B29C80F1B008D5745 /* Examples.playground */,
-				C286981629C8039B0085654D /* LiuFan */,
+				C286981629C8039B0085654D /* Sources */,
 				C286982229C8039D0085654D /* LiuFanTests */,
 				C286981529C8039B0085654D /* Products */,
+				612AE7E17914C25971C0CC00 /* Pods */,
+				2680793EBAA6D8628E0D1C94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,13 +99,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C286981629C8039B0085654D /* LiuFan */ = {
+		C286981629C8039B0085654D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				C286981729C8039B0085654D /* LiuFan.h */,
 				C286981829C8039B0085654D /* LiuFan.docc */,
 			);
-			path = LiuFan;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		C286982229C8039D0085654D /* LiuFanTests */ = {
@@ -109,10 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C286982829C8039D0085654D /* Build configuration list for PBXNativeTarget "LiuFan-iOS" */;
 			buildPhases = (
+				6DB3AB2A4F89852FC7481C59 /* [CP] Check Pods Manifest.lock */,
 				C286980F29C8039B0085654D /* Headers */,
 				C286981029C8039B0085654D /* Sources */,
 				C286981129C8039B0085654D /* Frameworks */,
 				C286981229C8039B0085654D /* Resources */,
+				C26BC99F29C8675B0049FAF5 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -194,6 +221,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DB3AB2A4F89852FC7481C59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiuFan-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C26BC99F29C8675B0049FAF5 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# SwiftLint 规范\nSWIFT_LINT_PATH=$PODS_ROOT/SwiftLint/swiftlint\nif which $SWIFT_LINT_PATH >/dev/null; then $SWIFT_LINT_PATH\nelse echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C286981029C8039B0085654D /* Sources */ = {
@@ -345,6 +415,7 @@
 		};
 		C286982929C8039D0085654D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C953A79BCB6A3468B3E934FB /* Pods-LiuFan-iOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -373,6 +444,7 @@
 		};
 		C286982A29C8039D0085654D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC779BD96A5D25F194A2DAF /* Pods-LiuFan-iOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
