@@ -26,9 +26,7 @@
 
 /* Begin PBXFileReference section */
 		1AC779BD96A5D25F194A2DAF /* Pods-LiuFan-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiuFan-iOS.release.xcconfig"; path = "Target Support Files/Pods-LiuFan-iOS/Pods-LiuFan-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		C284A97A29C80EEE008D5745 /* iOS开发笔记 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "iOS开发笔记"; sourceTree = "<group>"; };
 		C284A97B29C80F1B008D5745 /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		C284A97C29C81120008D5745 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C286981429C8039B0085654D /* LiuFan_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiuFan_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C286981729C8039B0085654D /* LiuFan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiuFan.h; sourceTree = "<group>"; };
 		C286981829C8039B0085654D /* LiuFan.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LiuFan.docc; sourceTree = "<group>"; };
@@ -79,8 +77,6 @@
 		C286980A29C8039B0085654D = {
 			isa = PBXGroup;
 			children = (
-				C284A97C29C81120008D5745 /* README.md */,
-				C284A97A29C80EEE008D5745 /* iOS开发笔记 */,
 				C284A97B29C80F1B008D5745 /* Examples.playground */,
 				C286981629C8039B0085654D /* Sources */,
 				C286982229C8039D0085654D /* LiuFanTests */,
