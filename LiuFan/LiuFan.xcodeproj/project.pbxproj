@@ -12,6 +12,7 @@
 		C286981F29C8039D0085654D /* LiuFan_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C286981429C8039B0085654D /* LiuFan_iOS.framework */; };
 		C286982429C8039D0085654D /* LiuFanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286982329C8039D0085654D /* LiuFanTests.swift */; };
 		C286982529C8039D0085654D /* LiuFan.h in Headers */ = {isa = PBXBuildFile; fileRef = C286981729C8039B0085654D /* LiuFan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2E8D13C29CEDAD70008AA4F /* ArrangementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E8D13B29CEDAD70008AA4F /* ArrangementButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		C286981829C8039B0085654D /* LiuFan.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LiuFan.docc; sourceTree = "<group>"; };
 		C286981E29C8039D0085654D /* LiuFanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiuFanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C286982329C8039D0085654D /* LiuFanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiuFanTests.swift; sourceTree = "<group>"; };
+		C2E8D13B29CEDAD70008AA4F /* ArrangementButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrangementButton.swift; sourceTree = "<group>"; };
 		C40A4A0308A70DC08A9161E9 /* libPods-LiuFan-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiuFan-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C953A79BCB6A3468B3E934FB /* Pods-LiuFan-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiuFan-iOS.debug.xcconfig"; path = "Target Support Files/Pods-LiuFan-iOS/Pods-LiuFan-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				C284A97B29C80F1B008D5745 /* Examples.playground */,
-				C286981629C8039B0085654D /* Sources */,
+				C286981629C8039B0085654D /* LiuFan */,
 				C286982229C8039D0085654D /* LiuFanTests */,
 				C286981529C8039B0085654D /* Products */,
 				612AE7E17914C25971C0CC00 /* Pods */,
@@ -95,13 +97,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C286981629C8039B0085654D /* Sources */ = {
+		C286981629C8039B0085654D /* LiuFan */ = {
 			isa = PBXGroup;
 			children = (
+				C2E8D13A29CEDA970008AA4F /* Sources */,
 				C286981729C8039B0085654D /* LiuFan.h */,
 				C286981829C8039B0085654D /* LiuFan.docc */,
 			);
-			path = Sources;
+			path = LiuFan;
 			sourceTree = "<group>";
 		};
 		C286982229C8039D0085654D /* LiuFanTests */ = {
@@ -110,6 +113,14 @@
 				C286982329C8039D0085654D /* LiuFanTests.swift */,
 			);
 			path = LiuFanTests;
+			sourceTree = "<group>";
+		};
+		C2E8D13A29CEDA970008AA4F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C2E8D13B29CEDAD70008AA4F /* ArrangementButton.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C286981929C8039B0085654D /* LiuFan.docc in Sources */,
+				C2E8D13C29CEDAD70008AA4F /* ArrangementButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +482,7 @@
 		C286982C29C8039D0085654D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -486,6 +499,7 @@
 		C286982D29C8039D0085654D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

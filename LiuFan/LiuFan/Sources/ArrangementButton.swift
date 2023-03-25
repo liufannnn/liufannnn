@@ -1,48 +1,47 @@
-# UIView
+//
+//  ArrangementButton.swift
+//  LiuFan
+//
+//  Created by 刘帆 on 2023/3/2.
+//  Copyright © 2023 Shenzhen Dazoo Technology Co., Ltd. All rights reserved.
+//
 
-## UIButton
-
-### UIEdgeInsets
-
-1. [UIEdgeInsets 详解](https://github.com/noahsark769/NGUIButtonInsetsExample)
-2. [UIEdgeInsets 补充解释](https://juejin.cn/post/6844903653380194311)
-3. [代码参考](https://github.com/SwifterSwift/SwifterSwift/blob/master/Sources/SwifterSwift/UIKit/UIButtonExtensions.swift)
-
-```swift
 import UIKit
 
-@IBDesignable class LayoutButton: UIButton {
+extension ArrangementButton {
 
-    enum Layout: Int {
+    /// 图片与文本的排布方式
+    enum Arrangement: Int {
+        /// 图片左，文本右
         case imageLeftTextRight
+        /// 图片右，文本左
         case imageRightTextLeft
+        /// 图片上，文本下
         case imageAboveText
+        /// 图片下，文本上
         case imageBelowText
     }
+}
 
+/// 图片与文本中线对齐的按钮
+@IBDesignable class ArrangementButton: UIButton {
+
+    /// 图片与文本的间距
     @IBInspectable var spacing: CGFloat = 0
 
-    /// 布局方式
+    /// 图片与文本的排布方式
     ///
     /// 1. [UIEdgeInsets详解](https://github.com/noahsark769/NGUIButtonInsetsExample)
     /// 2. [UIEdgeInsets补充解释](https://juejin.cn/post/6844903653380194311)
     /// 3. [代码参考](https://github.com/SwifterSwift/SwifterSwift/blob/master/Sources/SwifterSwift/UIKit/UIButtonExtensions.swift)
-    var layout = Layout.imageLeftTextRight
-
-    /// 布局方式
-    /// - Parameters:
-    ///   - 0: 图片左，文本右
-    ///   - 1: 图片右，文本左
-    ///   - 2: 图片上，文本下
-    ///   - 3: 图片下，文本上
-    @IBInspectable private var layoutRawValue: Int {
-        get { layout.rawValue }
+    var arrangement: Arrangement {
+        get { Arrangement(rawValue: arrangementRawValue) ?? .imageLeftTextRight }
         set {
-            layout = Layout(rawValue: newValue) ?? .imageLeftTextRight
+            arrangementRawValue = newValue.rawValue
             guard let imageSize = imageView?.image?.size,
                   let text = titleLabel?.text,
                   let font = titleLabel?.font else { return }
-            switch layout {
+            switch newValue {
             case .imageLeftTextRight:
                 let insetAmount = spacing / 2
                 imageEdgeInsets = UIEdgeInsets(top: 0, left: -insetAmount, bottom: 0, right: insetAmount)
@@ -74,7 +73,7 @@ import UIKit
 
                 let titleOffset = -(imageSize.height + spacing)
                 titleEdgeInsets = UIEdgeInsets(top: titleOffset, left: -imageSize.width, bottom: 0, right: 0)
-
+                
                 let imageOffset = -(titleSize.height + spacing)
                 imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: imageOffset, right: -titleSize.width)
 
@@ -83,6 +82,16 @@ import UIKit
             }
         }
     }
+    
+    /// 图片与文本的排布方式
+    /// - Parameters:
+    ///   - 0: 图片左，文本右
+    ///   - 1: 图片右，文本左
+    ///   - 2: 图片上，文本下
+    ///   - 3: 图片下，文本上
+    @IBInspectable private var arrangementRawValue = 0 {
+        didSet {
+            arrangement = Arrangement(rawValue: arrangementRawValue) ?? .imageLeftTextRight
+        }
+    }
 }
-
-```
