@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C286981329C8039B0085654D"
-               BuildableName = "LiuFan_iOS.framework"
-               BlueprintName = "LiuFan-iOS"
+               BuildableName = "LiuFan.framework"
+               BlueprintName = "LiuFan"
                ReferencedContainer = "container:LiuFan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C286981D29C8039D0085654D"
+               BuildableName = "LiuFanTests.xctest"
+               BlueprintName = "LiuFanTests"
+               ReferencedContainer = "container:LiuFan.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C2B3330E29D69AFF00E35B43"
+               BuildableName = "LiuFanUITests.xctest"
+               BlueprintName = "LiuFanUITests"
+               ReferencedContainer = "container:LiuFan.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -51,8 +71,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C286981329C8039B0085654D"
-            BuildableName = "LiuFan_iOS.framework"
-            BlueprintName = "LiuFan-iOS"
+            BuildableName = "LiuFan.framework"
+            BlueprintName = "LiuFan"
             ReferencedContainer = "container:LiuFan.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
