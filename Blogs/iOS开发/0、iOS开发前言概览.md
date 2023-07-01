@@ -6,6 +6,8 @@
 
 1. [UI 构建：代码手写、xib 和 Storyboard 抉择](https://onevcat.com/2013/12/code-vs-xib-vs-storyboard/)
 1. [SwiftUI 建议最低支持 iOS14.5](https://www.ethanhuang13.com/p/swiftui-2-the-good-the-bad)
+1. [Swift 闭包无脑加 [weak self] 行不行？](https://zhuanlan.zhihu.com/p/108710211)
+1. [多层嵌套闭包怎么用 [weak self]](https://www.bilibili.com/read/cv2719977/)
 
 ## 二、开发工具
 
