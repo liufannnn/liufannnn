@@ -8,6 +8,7 @@
 1. [SwiftUI 建议最低支持 iOS14.5](https://www.ethanhuang13.com/p/swiftui-2-the-good-the-bad)
 1. [Swift 闭包无脑加 [weak self] 行不行？](https://zhuanlan.zhihu.com/p/108710211)
 1. [多层嵌套闭包怎么用 [weak self]](https://www.bilibili.com/read/cv2719977/)
+1. [非常棒的多线程讲解-Swift](https://juejin.cn/post/7115968247974854687)
 
 ## 二、开发工具
 
