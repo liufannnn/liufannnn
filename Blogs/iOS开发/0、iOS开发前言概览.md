@@ -10,6 +10,9 @@
 1. [多层嵌套闭包怎么用 [weak self]](https://www.bilibili.com/read/cv2719977/)
 1. [非常棒的多线程讲解-Swift](https://juejin.cn/post/7115968247974854687)
 1. [Mac Charles 抓包 iPhone Https](https://juejin.cn/post/7186531442518655034)
+1. [事件的传递和响应机制](https://www.jianshu.com/p/2e074db792ba)
+1. [说一下 JS 和 OC 互相调用的几种方式](https://www.jianshu.com/p/870dba42ec15)
+1. [WKWebView 那些坑](https://mp.weixin.qq.com/s/rhYKLIbXOsUJC_n6dt9UfA)
 
 ## 二、开发工具
 
