@@ -27,5 +27,3 @@
 ### 🕹 终端
 
 1. CocoaPods 更换源：`gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/`
-1. [Homebrew 清华大学开源镜像](https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/)
-1. [配置 GitHub SSH](https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
