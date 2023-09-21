@@ -1,6 +1,7 @@
 #
 
-    母弱出商贾
-    父强做侍郎
-    族望留原籍
-    家贫走他乡
+1. [Programming with Objective-C 中文版][ObjC]
+2. [The Swift Programming Language 中文版][Swift]
+
+[ObjC]: http://www.bczl.xyz/objc/doc-zh/
+[Swift]: https://gitbook.swiftgg.team/swift/
