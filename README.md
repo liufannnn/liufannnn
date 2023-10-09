@@ -9,9 +9,11 @@ iOS 开发常用：
 iOS 开发书籍、文档：
 
 1. [中文版《Programming with Objective-C》][ObjC]
+1. [中文版《Google Objective-C Style Guide》][ObjC 风格指南]
 1. [中文版《The Swift Programming Language》][Swift]
 
 [ObjC]: http://www.bczl.xyz/objc/doc-zh/
+[ObjC 风格指南]: https://zh-google-styleguide.readthedocs.io/en/latest/google-objc-styleguide/contents/
 [Swift]: https://gitbook.swiftgg.team/swift/
 
 值得收藏的笔记、博客：
