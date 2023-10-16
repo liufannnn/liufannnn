@@ -3,6 +3,9 @@
 iOS 开发常用：
 
 1. [iOS 开发常用三方库、插件、知名博客等等][awesome-ios]
+1. [正则表达式学习][learn-regex]
+
+[learn-regex]: https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md
 
 [awesome-ios]: https://github.com/Tim9Liu9/TimLiu-iOS
 
