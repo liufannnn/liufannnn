@@ -19,8 +19,11 @@ iOS 开发书籍、文档：
 [ObjC 风格指南]: https://zh-google-styleguide.readthedocs.io/en/latest/google-objc-styleguide/contents/
 [Swift]: https://gitbook.swiftgg.team/swift/
 
-值得收藏的笔记、博客：
+Git 统计指定日期范围内的改动代码行数
 
-1. [nixzhu 开发笔记][nixzhu]
-
-[nixzhu]: https://github.com/nixzhu/dev-blog
+```shell
+git log --author="$(git config --get user.name)" \
+--since=2022-10-12 --until=2023-04-12 \
+--pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } \
+END { printf "新增行数：%s，移除行数：%s，总行数：%s\n", add, subs, loc }' 
+```
